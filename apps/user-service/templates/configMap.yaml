@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.global.appName }}-env-vars
+  annotations:
+    argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
+data:
+  SEARCH_SERVICE_URL: "http://search.search.svc.cluster.local"
+  CANDIDACY_SERVICE_URL: "http://candidacy.candidacy.svc.cluster.local"
+  DB_POOL_SIZE: "20"

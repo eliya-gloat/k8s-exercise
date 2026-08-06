@@ -1,0 +1,9 @@
+apiVersion: v2
+name: candidacy
+description: candidacy service
+type: application
+version: 0.1.0
+dependencies:
+  - name: devops_infra
+    version: "~1.15.0"
+    repository: https://eliya-gloat.github.io/helm-chart-exercise

@@ -1,0 +1,7 @@
+global:
+  appName: user-service
+
+devops_infra:
+  deployment:
+    image:
+      repository: registry.internal.example/user-service

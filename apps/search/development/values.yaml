@@ -1,0 +1,7 @@
+global:
+  appName: search
+
+devops_infra:
+  deployment:
+    image:
+      repository: registry.internal.example/search

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.global.appName }}-env-vars
+data:
+  ONTOLOGY_URL: "http://ontology-v2.ontology.svc.cluster.local"
+  USER_SERVICE_URL: "http://user-service.users.svc.cluster.local"
+  COMPANY_SERVICE_URL: "http://company-service.company-service.svc.cluster.local"
+  OPENSEARCH_HOST: "https://search-cluster.internal.example:9200"
+  LOG_LEVEL: "info"

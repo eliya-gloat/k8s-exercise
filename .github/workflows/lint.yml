@@ -1,0 +1,25 @@
+name: lint
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: azure/setup-helm@v4
+        with:
+          version: v3.18.4
+      - name: prettier
+        run: npx --yes prettier@3.3.3 --check "apps/**/*.yaml"
+      - name: helm lint
+        run: |
+          for chart in apps/*/Chart.yaml; do
+            dir=$(dirname "$chart")
+            helm dependency update "$dir" >/dev/null
+            helm lint "$dir" -f "$dir/development/values.yaml"
+          done

@@ -1,0 +1,3 @@
+apps/*/charts/
+apps/*/Chart.lock
+.DS_Store

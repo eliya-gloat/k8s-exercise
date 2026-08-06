@@ -1,0 +1,7 @@
+global:
+  appName: agent-service
+
+devops_infra:
+  deployment:
+    image:
+      repository: registry.internal.example/agent-service

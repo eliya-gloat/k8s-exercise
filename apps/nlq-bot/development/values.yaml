@@ -1,0 +1,6 @@
+global:
+  appName: nlq-bot
+
+image:
+  repository: registry.internal.example/nlq-bot
+  tag: "2026.08.1"

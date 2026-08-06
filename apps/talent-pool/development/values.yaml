@@ -1,0 +1,7 @@
+global:
+  appName: talent-pool
+
+devops_infra:
+  deployment:
+    image:
+      repository: registry.internal.example/talent-pool

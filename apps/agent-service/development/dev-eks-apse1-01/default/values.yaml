@@ -1,0 +1,5 @@
+devops_infra:
+  deployment:
+    replicas: 1
+    image:
+      tag: "2026.08.1"

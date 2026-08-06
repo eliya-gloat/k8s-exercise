@@ -1,0 +1,7 @@
+global:
+  appName: recommender-consumer
+
+devops_infra:
+  deployment:
+    image:
+      repository: registry.internal.example/recommender-consumer

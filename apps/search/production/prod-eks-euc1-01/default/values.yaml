@@ -1,0 +1,9 @@
+global:
+  appName: search
+
+devops_infra:
+  deployment:
+    replicas: 3
+    image:
+      repository: registry.internal.example/search
+      tag: "2026.07.3"

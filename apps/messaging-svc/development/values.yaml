@@ -1,0 +1,7 @@
+global:
+  appName: messaging-svc
+
+devops_infra:
+  deployment:
+    image:
+      repository: registry.internal.example/messaging-svc

@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.global.appName }}-env-vars
+data:
+  USER_SERVICE_URL: "http://user-service.users.svc.cluster.local"
+  NOTIFICATION_SERVICE_URL: "http://notification.notification.svc.cluster.local"
+  SMTP_HOST: "smtp.internal.example"

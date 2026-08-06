@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.global.appName }}-env-vars
+data:
+  RECOMMENDER_SERVICE_URL: "http://recommender.recommender.svc.cluster.local"
+  KAFKA_TOPIC: "recommender.events.v1"

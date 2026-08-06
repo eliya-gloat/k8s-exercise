@@ -1,0 +1,7 @@
+global:
+  appName: career-path
+
+devops_infra:
+  deployment:
+    image:
+      repository: registry.internal.example/career-path

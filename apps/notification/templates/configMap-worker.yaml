@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.global.appName }}-worker-env-vars
+data:
+  ONTOLOGY_URL: "http://ontology-v2.ontology.svc.cluster.local"
+  BATCH_SIZE: "500"

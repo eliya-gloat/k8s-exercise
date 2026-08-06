@@ -1,0 +1,7 @@
+global:
+  appName: candidacy
+
+devops_infra:
+  deployment:
+    image:
+      repository: registry.internal.example/candidacy

@@ -1,0 +1,9 @@
+global:
+  appName: recommender-consumer
+
+devops_infra:
+  deployment:
+    replicas: 3
+    image:
+      repository: registry.internal.example/recommender-consumer
+      tag: "2026.07.3"

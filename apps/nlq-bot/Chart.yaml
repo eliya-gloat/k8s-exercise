@@ -1,0 +1,5 @@
+apiVersion: v2
+name: nlq-bot
+description: nlq-bot service
+type: application
+version: 0.1.0

@@ -1,0 +1,7 @@
+global:
+  appName: hr-connector
+
+devops_infra:
+  deployment:
+    image:
+      repository: registry.internal.example/hr-connector

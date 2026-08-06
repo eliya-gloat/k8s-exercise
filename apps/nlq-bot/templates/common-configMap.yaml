@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.global.appName }}-common-env-vars
+data:
+  MODEL_SERVING_URL: "https://api-model-serving-euc1.dev.internal.example"
+  SNOWFLAKE_WAREHOUSE: "NLQ_WH"
