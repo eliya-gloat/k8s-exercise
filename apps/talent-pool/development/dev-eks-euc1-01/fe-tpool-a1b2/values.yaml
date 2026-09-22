@@ -1,0 +1,9 @@
+devops_infra:
+  deployment:
+    image:
+      tag: "fe-tpool-a1b2"
+    extraEnv:
+      - name: USER_SERVICE_URL
+        value: http://user-service.fe-tpool-usrs.svc.cluster.local
+      - name: SEARCH_SERVICE_URL
+        value: http://search.fe-tpool-srch.svc.cluster.local
